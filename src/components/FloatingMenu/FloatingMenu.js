@@ -10,7 +10,7 @@ const FloatingMenu = () => {
       <div
         style={{
           position: "fixed",
-          right: "100px",
+          right: "2rem",
           top:"45%",
           zIndex: "10",
           marginLeft: "100px",
