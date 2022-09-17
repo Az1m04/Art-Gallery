@@ -96,7 +96,7 @@ function App() {
               <About />
               {/* <Shop productList={productList} /> */}
               {/* <Banner /> */}
-              <NewArrivals productList={productList} />
+              {/* <NewArrivals productList={productList} /> */}
 
               <Footer />
             </main>

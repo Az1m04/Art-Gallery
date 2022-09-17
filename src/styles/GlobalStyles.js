@@ -31,16 +31,23 @@ html {
   .sc-kLwhqv{
 background-color:transparent !important;
 border:#fff !important;
+
   }
 
-  .sc-hiCibw > button{
+  .btn {
     background-color:#BA2227 !important;
-
+    padding:0.5rem;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    cursor:pointer;
   }
-  .sc-cidDSM{
-    background-color:#FFF !important;
+  
 
-  }
+
 
   .App{
     position:relative;
@@ -48,5 +55,33 @@ border:#fff !important;
   #next,#prev{
     display:none;
   }
+.jhMJsX{
+  background-color:#fff !important;
+  border-raddius:50% !important;
+  height:5px !important;
+  width:5px !important;
+}
+
+@media only screen and (max-width: 425px) {
+  .gqPMbx {
+    flex-wrap:wrap !important;
+    
+  }
+  .gqPMbx img{
+    width:60% !important;
+    height:40% !important;
+  }
+  .iPTzHl{
+    min-height:340vh !important;
+  }
+
+   .bnbbOb {
+    top:15% !important;
+  }
+  .ixIFVR{
+margin-top:-10rem !important;
+  }
+}
+
 `;
 export default GlobalStyles;

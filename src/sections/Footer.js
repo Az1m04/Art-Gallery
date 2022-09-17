@@ -150,7 +150,7 @@ const Footer = () => {
           <li onClick={() => handleScroll("#home")}>home</li>
           <li onClick={() => handleScroll(".about")}>about</li>
           {/* <li onClick={() => handleScroll("#shop")}>shop</li> */}
-          <li onClick={() => handleScroll("#new-arrivals")}>art galllery</li>
+          {/* <li onClick={() => handleScroll("#new-arrivals")}>art galllery</li> */}
           {/* <li>
             <a href="https://google.com" target="_blank" rel="noreferrer">
               look book
