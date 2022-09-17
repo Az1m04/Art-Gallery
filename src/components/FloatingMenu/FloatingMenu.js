@@ -70,7 +70,7 @@ const FloatingMenu = () => {
         rotationAngleInclusive={false}
       >
     
-        <CircleMenuItem tooltip="About" tooltipPlacement="right">
+        <CircleMenuItem tooltip="About" tooltipPlacement="left">
           <a href="#info">
             <div className="btn">
               <i
