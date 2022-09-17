@@ -125,5 +125,26 @@ margin-top:-10rem !important;
   }
 }
 
+
+@media only screen and (min-width: 801px) {
+  .gqPMbx {
+    flex-wrap:wrap !important;
+    
+  }
+  .gqPMbx img{
+    width:60% !important;
+    height:40% !important;
+  }
+  .iPTzHl{
+    min-height:340vh !important;
+  }
+
+   .bnbbOb {
+    top:15% !important;
+  }
+  .ixIFVR{
+margin-top:-10rem !important;
+  }
+}
 `;
 export default GlobalStyles;
