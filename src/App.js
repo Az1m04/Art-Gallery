@@ -61,7 +61,9 @@ function App() {
 
       <GlobalStyles />
       <ThemeProvider theme={dark}>
-        <Logo />
+      <div  style={{position:'absolute',zIndex:'10' , margin:'3rem'}}>
+      <Logo />
+      </div>
 
         <LocomotiveScrollProvider
           options={{
