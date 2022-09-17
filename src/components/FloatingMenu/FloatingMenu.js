@@ -69,11 +69,7 @@ const FloatingMenu = () => {
         }
         rotationAngleInclusive={false}
       >
-        {/* <CircleMenuItem tooltip="Art Gallery">
-          <a href="#new-arrivals">
-            <img src={Art} alt="Art" height={50} width={50} />
-          </a>
-        </CircleMenuItem> */}
+    
         <CircleMenuItem tooltip="About" tooltipPlacement="right">
           <a href="#info">
             <div className="btn">
@@ -83,6 +79,17 @@ const FloatingMenu = () => {
               ></i>
               {/* <img src={Info} alt="info" height={50} width={50} /> */}
             </div>
+          </a>
+        </CircleMenuItem>
+            <CircleMenuItem tooltip="Contact">
+          <a>
+          <div className="btn">
+              <i
+                class="fa-solid fa-phone"
+                style={{ fontSize: "20px", color: "#fff" }}
+              ></i>
+            </div>
+            {/* <img src={Art} alt="Art" height={50} width={50} /> */}
           </a>
         </CircleMenuItem>
         <CircleMenuItem tooltip="Home" tooltipPlacement="top">

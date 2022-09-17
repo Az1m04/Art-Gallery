@@ -62,7 +62,7 @@ border:#fff !important;
   width:5px !important;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 480px) {
   .gqPMbx {
     flex-wrap:wrap !important;
     
