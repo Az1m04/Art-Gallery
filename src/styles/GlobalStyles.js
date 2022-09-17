@@ -62,25 +62,8 @@ border:#fff !important;
   width:5px !important;
 }
 
-@media only screen and (max-width: 700px) and (min-width: 400px){
-  .gqPMbx {
-    flex-wrap:wrap !important;
-    
-  }
-  .gqPMbx img{
-    width:60% !important;
-    height:40% !important;
-  }
-  .iPTzHl{
-    min-height:340vh !important;
-  }
 
-   .bnbbOb {
-    top:15% !important;
-  }
-  .ixIFVR{
-margin-top:-10rem !important;
-  }
-}
+
+
 `;
 export default GlobalStyles;

@@ -19,6 +19,12 @@ const Section = styled.section`
 
   position: relative;
   /* background-color: yellow; */
+
+
+
+  @media (max-width: 600px) {
+ margin-top:-10rem !important;
+}
 `;
 
 const LogoContainer = styled.div`

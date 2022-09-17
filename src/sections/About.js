@@ -14,6 +14,10 @@ const Section = styled.section`
   align-items: center;
   margin: 0 auto;
   background-color: ${(props) => props.theme.body};
+  
+  @media (max-width: 600px) {
+    min-height:340vh !important;
+  }
 
   @media (max-width: 48em) {
     width: 90vw;
@@ -22,6 +26,7 @@ const Section = styled.section`
   @media (max-width: 30em) {
     width: 100vw;
   }
+
 `;
 
 const Title = styled.h1`
@@ -69,6 +74,8 @@ const SubTitle = styled.h6`
   @media (max-width: 48em) {
     font-size: ${(props) => props.theme.fontmd};
   }
+
+
 `;
 
 const Left = styled.div`
@@ -95,6 +102,12 @@ const Left = styled.div`
     border-radius: 20px;
   }
 
+
+  @media (max-width: 600px) {
+
+ top:15% !important;
+  
+}
   @media (max-width: 48em) {
     font-size: ${(props) => props.theme.fontmd};
   }
@@ -134,7 +147,19 @@ const Right = styled.div`
     box-shadow: 0 0 0 0.5vw ${(props) => props.theme.text};
     border: 1px solid ${(props) => props.theme.body};
   }
+  
+  @media (max-width: 600px) {
+      flex-wrap:wrap !important;
+      
+     img{
+      width:60% !important;
+      height:40% !important;
+    }
+  
 
+
+  }
+  
   @media (max-width: 64em) {
     width: 100%;
     display: flex;
