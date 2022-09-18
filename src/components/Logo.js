@@ -165,8 +165,8 @@ const Logo = ({logoSize,showText}) => {
   }
 
   @media (max-width: 600px) {
-    margin-top:${logoSize && '8vh'};
-    margin-left:${logoSize && '-90px'};
+    margin-top:${logoSize==='large' ? '8vh' :'-2vh'};
+    margin-left:${logoSize==='large' ? '-90px' :'-40px'};
     img {
       width: ${logoSize==='large' ? '18rem' : '4rem'};
     }
