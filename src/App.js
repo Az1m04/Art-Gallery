@@ -10,7 +10,7 @@ import Content from "./components/Content";
 
 import axios from "axios";
 
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import Logo from "./components/Logo";
 import FloatingMenu from "./components/FloatingMenu/FloatingMenu";
 import LandingPage from "./components/LandingPage/LandingPage";
@@ -20,6 +20,7 @@ function App() {
 
   const [loaded, setLoaded] = useState(false);
   const [productList, setProductList] = useState();
+  const [toggleMenu, setToggleMenu] = useState(false);
 
   const [getData, setData] = useState(null);
 
@@ -71,9 +72,43 @@ function App() {
     fetchProducts();
   }, []);
 
+
+  const useOutsideClick = (callback) => {
+    const ref = React.useRef();
+  
+    React.useEffect(() => {
+      const handleClick = (event) => {
+        if (ref.current && !ref.current.contains(event.target)) {
+          callback();
+        }
+      };
+  
+      document.addEventListener('click', handleClick);
+  
+      return () => {
+        document.removeEventListener('click', handleClick);
+      };
+    }, [ref]);
+  
+    return ref;
+  };
+
+     const handleClickOutside = () => {
+   
+        setToggleMenu(false)
+  };
+
+  const myref = useOutsideClick(handleClickOutside);
+ 
+  console.log(toggleMenu,"<")
   return (
     <>
-      {loaded && <FloatingMenu />}
+      {loaded && <div  
+    ref={myref}
+    >
+      <FloatingMenu toggleMenu={toggleMenu} setToggleMenu={setToggleMenu}/>
+
+      </div> }
 
       <GlobalStyles />
       <ThemeProvider theme={dark}>

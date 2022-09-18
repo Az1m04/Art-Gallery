@@ -1,37 +1,11 @@
 import React, { useState } from "react";
 import { CircleMenu, CircleMenuItem } from "react-circular-menu";
 
-const FloatingMenu = () => {
-  const [toggleMenu, setToggleMenu] = useState(false);
-  const useOutsideClick = (callback) => {
-    const ref = React.useRef();
+const FloatingMenu = ({toggleMenu,setToggleMenu}) => {
+ 
   
-    React.useEffect(() => {
-      const handleClick = (event) => {
-        if (ref.current && !ref.current.contains(event.target)) {
-          callback();
-        }
-      };
-  
-      document.addEventListener('click', handleClick);
-  
-      return () => {
-        document.removeEventListener('click', handleClick);
-      };
-    }, [ref]);
-  
-    return ref;
-  };
-
-     const handleClickOutside = () => {
-    setToggleMenu(false);
-  };
-
-  // const myref = useOutsideClick(handleClickOutside);
-  console.log(toggleMenu,"E<")
   return (
     <div 
-    // ref={myref}
       style={{
         position: "fixed",
         right: "2rem",
