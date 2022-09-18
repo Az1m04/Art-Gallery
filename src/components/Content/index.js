@@ -131,7 +131,7 @@ const Right = styled.div`
   }
 
   @media (max-width: 600px) {
-    margin-top: 18%;
+    margin-top: 20%;
     flex-wrap: wrap !important;
     img {
       width: 60% !important;
