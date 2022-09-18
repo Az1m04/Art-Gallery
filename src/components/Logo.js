@@ -26,7 +26,6 @@ const Text = styled(motion.span)`
   margin-top:-3.5rem;
 
   @media (max-width: 600px) {
-    margin-top:1vh;
     font-size: ${(props) => props.theme.fontlg};
   }
   @media (max-width: 40em) {
@@ -166,10 +165,10 @@ const Logo = ({logoSize,showText}) => {
   }
 
   @media (max-width: 600px) {
-    margin-top:${logoSize && '14vh'};
-    margin-left:${logoSize && '-65px'};
+    margin-top:${logoSize && '8vh'};
+    margin-left:${logoSize && '-90px'};
     img {
-      width: ${logoSize==='large' ? '6rem' : '4rem'};
+      width: ${logoSize==='large' ? '18rem' : '4rem'};
     }
   }
   // @media (max-width: 40em) {

@@ -103,7 +103,7 @@ const Left = styled.div`
   }
 
   @media (max-width: 600px) {
-    top: 19% !important;
+    top: 22% !important;
   }
   @media (max-width: 48em) {
     font-size: ${(props) => props.theme.fontmd};

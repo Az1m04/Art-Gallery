@@ -42,7 +42,7 @@ const Title = styled.h1`
 
   @media (max-width: 64em) {
     font-size: ${(props) => `calc(${props.theme.fontxxxl} - 5vw)`};
-    top: 12px;
+    top: 2rem;
     left: 0;
   }
 
@@ -116,7 +116,7 @@ const Right = styled.div`
   display: flex;
   gap: 5em;
   justify-content: center;
-  margin-top: 10%;
+  top: 7%;
   margin-bottom: 10%;
   .heading {
     height: 50vh;
@@ -222,7 +222,7 @@ const About = ({ setData }) => {
       >
         MASSIMO VIGNELLI
       </Title>
-      <Left
+      {/* <Left
         data-scroll
         data-scroll-sticky
         //  data-scroll-target="#fixed-target"
@@ -240,7 +240,7 @@ const About = ({ setData }) => {
         Vestibulum ut tellus interdum, rhoncus nunc eu, tincidunt nibh. Donec
         ullamcorper mauris nibh, sit amet ullamcorper nibh aliquam sit amet.
         Curabitur tempus consectetur arcu, a malesuada urna tempor non.
-      </Left>
+      </Left> */}
       <Right>
         <div
           className="heading"
