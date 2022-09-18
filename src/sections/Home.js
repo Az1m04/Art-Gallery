@@ -15,7 +15,7 @@ const Home = () => {
     <Section id="home">
          <div  style={{position:'absolute',zIndex:'10' ,
                   left:'40%',
-                  top:'35%'
+                  top:'30%'
                  
                  }}>
       <Logo logoSize='large' showText={true} />

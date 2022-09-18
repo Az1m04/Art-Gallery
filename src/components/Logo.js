@@ -41,8 +41,8 @@ const textVariants = {
     opacity: 1,
     x: 1,
     transition: {
-      duration: 2, // 2
-      delay: 5,
+      duration: 1, // 2
+      delay: 1,
       ease: "easeInOut",
     },
   },
@@ -53,7 +53,7 @@ const pathVariants = {
   visible: {
     opacity: 1,
     pathLength: 1,
-    transition: { duration: 2, delay: 3, ease: "easeInOut" },
+    transition: { duration: 1, delay: 1, ease: "easeInOut" },
   },
 };
 
@@ -152,7 +152,7 @@ const Logo = ({logoSize,showText}) => {
   flex-direction: column;
   align-items: center;
   img {
-    width: ${logoSize==='large' ? '20rem' : '8rem'};
+    width: ${logoSize==='large' ? '25rem' : '8rem'};
     height: auto;
     overflow: visible;
 

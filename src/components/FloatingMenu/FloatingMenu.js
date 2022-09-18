@@ -27,11 +27,11 @@ const FloatingMenu = () => {
     setToggleMenu(false);
   };
 
-  const myref = useOutsideClick(handleClickOutside);
-  
+  // const myref = useOutsideClick(handleClickOutside);
+  console.log(toggleMenu,"E<")
   return (
     <div 
-    ref={myref}
+    // ref={myref}
       style={{
         position: "fixed",
         right: "2rem",
@@ -46,38 +46,43 @@ const FloatingMenu = () => {
         itemSize={2}
         radius={4}
         menuToggleElement={
-          <div>
-            {!toggleMenu ? (
-              <div className="btn" onClick={()=>{
-                setToggleMenu(!toggleMenu)
-              }}>
+          <div onClick={()=>{
+            setToggleMenu(!toggleMenu)
+          }}>
+            {toggleMenu ? (
+                 <div className="btn" >
+                  <i class="fa-solid fa-xmark"
+                    style={{ fontSize: "28px", color: "#fff" }}>
+                  </i>
+                </div>
+            ) : (
+              <div className="btn" >
                 <i
                   class="fa-solid fa-ellipsis"
                   style={{ fontSize: "28px", color: "#fff" }}
                 ></i>
+                 <i
+                  class="fa-solid fa-ellipsis"
+                  style={{ fontSize: "28px", color: "#fff",marginTop: '-14px'}}
+                ></i>
               </div>
-            ) : (
-              <div className="btn" onClick={()=>{
-                setToggleMenu(!toggleMenu)
-              }}>
-                <i class="fa-solid fa-xmark"
-                  style={{ fontSize: "28px", color: "#fff" }}>
-                </i>
-              </div>
+           
             )}
           </div>
         }
         rotationAngleInclusive={false}
       >
     
-        <CircleMenuItem tooltip="About" tooltipPlacement="left">
-          <a href="#info">
+
+           <CircleMenuItem tooltip="Our team" tooltipPlacement="left">
+          <a href="">
+            {/* <img src={Home} alt="Home" height={50} width={50} />
+             */}
             <div className="btn">
               <i
-                class="fa-solid fa-info"
+             class="fa-solid fa-users"
                 style={{ fontSize: "20px", color: "#fff" }}
               ></i>
-              {/* <img src={Info} alt="info" height={50} width={50} /> */}
             </div>
           </a>
         </CircleMenuItem>
@@ -92,15 +97,15 @@ const FloatingMenu = () => {
             {/* <img src={Art} alt="Art" height={50} width={50} /> */}
           </a>
         </CircleMenuItem>
-        <CircleMenuItem tooltip="Home" tooltipPlacement="top">
-          <a href="#home">
-            {/* <img src={Home} alt="Home" height={50} width={50} />
-             */}
+  
+        <CircleMenuItem tooltip="About" tooltipPlacement="left">
+          <a href="#info">
             <div className="btn">
               <i
-                class="fa-solid fa-house"
+                class="fa-solid fa-info"
                 style={{ fontSize: "20px", color: "#fff" }}
               ></i>
+              {/* <img src={Info} alt="info" height={50} width={50} /> */}
             </div>
           </a>
         </CircleMenuItem>

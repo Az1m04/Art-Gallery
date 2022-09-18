@@ -9,15 +9,36 @@ const GlobalStyles = createGlobalStyle`
     padding:0;
 }
 
+@font-face {
+  font-family: "ArialBold";
+  src: local("ArialBold"),
+   url("./assets/fonts/arialbd.ttf") format("truetype");
+  font-weight: bold;
+  }
+
+  @font-face {
+    font-family: "ArialMedium";
+    src: local("ArialMedium"),
+     url("./assets/fonts/ArialMdm.ttf") format("truetype");
+    font-weight: medium;
+    }
+    
+
 body{
     font-family:"Sirin Stencil";
     overflow:hidden;
+    background-color: #202020;
 }
+
+
+
 
 h1,h2,h3,h4,h5,h6{
     margin:0;
     padding:0;
 }
+
+
 
 a{
     color:inherit;
@@ -41,6 +62,7 @@ border:#fff !important;
     width: 35px;
     border-radius: 50%;
     display: flex;
+    flex-direction:column;
     justify-content: center;
     align-items:center;
     cursor:pointer;

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import img1 from "../assets/Images/1.webp";
 import img2 from "../assets/Images/2.webp";
 import img3 from "../assets/Images/3.webp";
+import { useNavigate } from 'react-router-dom';
 
 const Section = styled.section`
   position: relative;
@@ -12,11 +13,11 @@ const Section = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 2rem auto;
   background-color: ${(props) => props.theme.body};
-  
+
   @media (max-width: 600px) {
-    min-height:340vh !important;
+    min-height: 340vh !important;
   }
 
   @media (max-width: 48em) {
@@ -26,17 +27,14 @@ const Section = styled.section`
   @media (max-width: 30em) {
     width: 100vw;
   }
-
 `;
 
 const Title = styled.h1`
   width: 70vw;
 
   font-size: ${(props) => props.theme.fontxxl};
-  font-family: "Kaushan Script";
-  font-weight: 300;
+  font-family: "ArialBold";
   color: ${(props) => props.theme.text};
-
   position: absolute;
   top: 2rem;
   left: 5%;
@@ -74,17 +72,15 @@ const SubTitle = styled.h6`
   @media (max-width: 48em) {
     font-size: ${(props) => props.theme.fontmd};
   }
-
-
 `;
 
 const Left = styled.div`
   width: 70vw;
   font-size: ${(props) => props.theme.fontlg};
   color: ${(props) => props.theme.text};
-  font-weight: 200;
+  font-family: "ArialMedium";
   z-index: 5;
-  margin-top: 6%;
+  margin-top: 10%;
 
   @media (max-width: 64em) {
     width: 80%;
@@ -102,12 +98,9 @@ const Left = styled.div`
     border-radius: 20px;
   }
 
-
   @media (max-width: 600px) {
-
- top:15% !important;
-  
-}
+    top: 15% !important;
+  }
   @media (max-width: 48em) {
     font-size: ${(props) => props.theme.fontmd};
   }
@@ -125,13 +118,30 @@ const Right = styled.div`
   justify-content: center;
   margin-top: 10%;
   margin-bottom: 10%;
-
-  img {
+  .heading {
     height: 50vh;
     width: 50vw;
+    position: relative;
+    cursor: pointer;
+  }
+  .title {
+    position: absolute;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 28px;
+  }
+  .heading > img {
+    height: 100%;
+    width: 100%;
     object-fit: cover;
     box-shadow: 0 0 0 0.5vw ${(props) => props.theme.text};
     border: 1px solid ${(props) => props.theme.body};
+    opacity: 0.55;
   }
   .small-img-1 {
     height: 50vh;
@@ -147,28 +157,26 @@ const Right = styled.div`
     box-shadow: 0 0 0 0.5vw ${(props) => props.theme.text};
     border: 1px solid ${(props) => props.theme.body};
   }
-  
+
   @media (max-width: 600px) {
-      flex-wrap:wrap !important;
-      
-     img{
-      width:60% !important;
-      height:40% !important;
+    flex-wrap: wrap !important;
+    .heading {
+      width: 60% !important;
+      height: 40% !important;
     }
-  
-
-
   }
-  
+
   @media (max-width: 64em) {
     width: 100%;
     display: flex;
     position: absolute;
     justify-content: center;
     align-items: center;
-    img {
+    .heading {
       height: 20vh;
       width: 20vw;
+    }
+    .heading > img {
       object-fit: cover;
       top: 50%;
     }
@@ -196,7 +204,8 @@ const Right = styled.div`
     }
   }
 `;
-const About = () => {
+const About = ({ setData }) => {
+  let navigate = useNavigate();
   return (
     <Section id="fixed-target" className="about">
       <SubTitle
@@ -233,21 +242,43 @@ const About = () => {
         Curabitur tempus consectetur arcu, a malesuada urna tempor non.
       </Left>
       <Right>
-        <img data-scroll data-scroll-speed="-1" src={img1} alt="About us" />
-        <img
-          data-scroll
-          data-scroll-speed="3"
-          src={img2}
-          alt="About us"
-          className="small-img-1"
-        />
-        <img
-          data-scroll
-          data-scroll-speed="-1"
-          src={img3}
-          alt="About us"
-          className="small-img-2"
-        />
+        <div
+          className="heading"
+          onClick={() => {
+            setData({ title: "Art Education", img: img1 });
+            navigate('/content');
+            
+          }}
+        >
+          <div className="title">Art Education</div>
+          <img data-scroll data-scroll-speed="-1" src={img1} alt="About us" />
+        </div>
+        <div
+          className="heading"
+          onClick={() => {
+            setData({ title: "Art Dealing", img: img2 });
+            navigate('/content');
+          }}
+        >
+          <div className="title">Art Dealing</div>
+          <img
+            data-scroll
+            data-scroll-speed="3"
+            src={img2}
+            alt="About us"
+            className="small-img-1"
+          />
+        </div>
+        <div className="heading">
+          <div className="title"> </div>
+          <img
+            data-scroll
+            data-scroll-speed="-1"
+            src={img3}
+            alt="About us"
+            className="small-img-2"
+          />
+        </div>
       </Right>
     </Section>
   );
