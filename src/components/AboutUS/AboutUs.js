@@ -192,6 +192,10 @@ width:100vw;
     display: block;
     margin-top:-50rem;
   }
+  @media (max-width: 48em) {
+
+    margin-top:-30rem;
+  }
 `
 
 const AboutUS = ({ loaded, containerRef }) => {
