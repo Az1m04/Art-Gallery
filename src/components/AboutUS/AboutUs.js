@@ -140,6 +140,7 @@ const Left = styled.div`
   @media (max-width: 30em) {
     font-size: ${(props) => props.theme.fontsm};
     width: 70%;
+    margin-bottom:8rem;
   }
 `;
 
