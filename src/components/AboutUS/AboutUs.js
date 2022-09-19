@@ -53,12 +53,12 @@ const SectionRight = styled.section`
   @media (max-width: 48em) {
     width: 90vw;
     background-color: transparent;
-    margin-top: -80rem;
+    margin-top: -40rem;
   }
 
   @media (max-width: 30em) {
     width: 100vw;
-    margin-top: -60rem;
+    // margin-top: -60rem;
   }
 `;
 const Title = styled.h1`
@@ -73,13 +73,14 @@ const Title = styled.h1`
   @media (max-width: 64em) {
     font-size: ${(props) => `calc(${props.theme.fontxxxl} - 5vw)`};
     position: relative;
+    
     margin-left: -40rem;
   }
 
   @media (max-width: 48em) {
     font-size: ${(props) => props.theme.fontxxl};
     position: relative;
-    margin-left: -10rem;
+    margin-left: -20rem;
   }
 `;
 
@@ -280,6 +281,7 @@ const AboutUS = ({ loaded, containerRef }) => {
                   data-scroll-sticky
                   //  data-scroll-target="#fixed-target"
                 >
+                  <div>
                   Like Elizabeth Broun very rightly says, “Art is not always
                   about pretty things. It is about who we are, what happened to
                   us and how our lives are affected.” History has played
@@ -331,6 +333,7 @@ const AboutUS = ({ loaded, containerRef }) => {
                   than buyers and investors. This impacted the artists too.
                   Hence, the realisation of the need for a venture like Art for
                   Unity.
+                  </div>
                 </Right>
               </SectionRight>
             </SectionWrapper>

@@ -49,7 +49,7 @@ const FloatingMenu = ({toggleMenu,setToggleMenu}) => {
     
 
            <CircleMenuItem tooltip="Our team" tooltipPlacement="left">
-          <a>
+          <a  href="/teams">
             {/* <img src={Home} alt="Home" height={50} width={50} />
              */}
             <div className="btn">
