@@ -260,7 +260,7 @@ const AboutUS = ({ loaded, containerRef }) => {
                 data-scroll-sticky
                 //  data-scroll-target="#fixed-target"
               >
-       <ul className="aboutList">
+       {/* <ul className="aboutList">
         <li>
             Lorem ipsum
         </li>
@@ -273,7 +273,7 @@ const AboutUS = ({ loaded, containerRef }) => {
         <li>
             Lorem ipsum
         </li>
-       </ul>
+       </ul> */}
               </Left>
             </Section>
             <SectionRight id="right">

@@ -73,7 +73,7 @@ const FloatingMenu = ({toggleMenu,setToggleMenu}) => {
         </CircleMenuItem>
   
         <CircleMenuItem tooltip="About" tooltipPlacement="left">
-          <a href="#info">
+          <a href="/aboutus">
             <div className="btn">
               <i
                 class="fa-solid fa-info"
