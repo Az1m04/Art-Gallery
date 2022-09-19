@@ -74,8 +74,14 @@ border:#fff !important;
     cursor:pointer;
   }
   
+  .aboutList{
+    list-style-type: none;
 
+  }
 
+.aboutList > li {
+  padding:5px;
+}
 
   .App{
     position:relative;

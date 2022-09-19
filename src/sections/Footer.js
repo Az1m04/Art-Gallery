@@ -20,11 +20,9 @@ const Section = styled.section`
   position: relative;
   /* background-color: yellow; */
 
-
-
   @media (max-width: 600px) {
- margin-top:-10rem !important;
-}
+    margin-top: -10rem !important;
+  }
 `;
 
 const LogoContainer = styled.div`
@@ -39,7 +37,7 @@ const LogoContainer = styled.div`
   }
   h3 {
     font-size: ${(props) => props.theme.fontxl};
-    
+
     @media (max-width: 48em) {
       font-size: ${(props) => props.theme.fontxl};
       img {
@@ -153,7 +151,10 @@ const Footer = () => {
       >
         <ul>
           <li onClick={() => handleScroll("#home")}>home</li>
-          <li onClick={() => handleScroll(".about")}>about</li>
+          <li>
+            {" "}
+            <a href="/aboutus">about</a>
+          </li>
           {/* <li onClick={() => handleScroll("#shop")}>shop</li> */}
           {/* <li onClick={() => handleScroll("#new-arrivals")}>art galllery</li> */}
           {/* <li>

@@ -116,12 +116,11 @@ const Left = styled.div`
 
   @media (max-width: 64em) {
     width: 80%;
+    display: flex;
     position: relative;
-    margin-top:0rem;
-    margin-bottom:5rem;
-   
-    padding: 2rem;
-    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    margin-top:5vh;
 
 
    
@@ -153,7 +152,7 @@ const Right = styled.div`
   margin-top: 10%;
 
   @media (max-width: 64em) {
-    width: 100%;
+    width: 80%;
     display: flex;
     position: relative;
     justify-content: center;
@@ -162,7 +161,7 @@ const Right = styled.div`
   }
 
   @media (max-width: 48em) {
-    width: 100%;
+    width: 80%;
     display: flex;
     position: relative;
     justify-content: center;
@@ -253,7 +252,7 @@ const AboutUS = ({ loaded, containerRef }) => {
                 data-scroll-sticky
                 //  data-scroll-target="#fixed-target"
               >
-       <ul>
+       <ul className="aboutList">
         <li>
             Lorem ipsum
         </li>
