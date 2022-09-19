@@ -54,6 +54,8 @@ const SectionRight = styled.section`
     width: 90vw;
     background-color: transparent;
     margin-top: -40rem;
+    margin-bottom:20rem;
+
   }
 
   @media (max-width: 30em) {

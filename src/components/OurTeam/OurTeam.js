@@ -51,12 +51,14 @@ const SectionRight = styled.section`
   @media (max-width: 600px) {
     min-height: 200vh !important;
     width: 100vw;
+    margin-bottom:5rem;
   }
 
   @media (max-width: 48em) {
     width: 90vw;
     background-color: transparent;
     margin-top: -50rem;
+    margin-bottom:20rem;
   }
 
   @media (max-width: 30em) {
@@ -165,8 +167,8 @@ const Right = styled.div`
     align-items: center;
     margin-top: 5vh;
     img {
-      height: 40vh;
-      width: 40vw;
+      height: 50vh;
+      width: 90vw;
     }
   }
 
