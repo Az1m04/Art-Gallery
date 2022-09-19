@@ -25,7 +25,7 @@ const GlobalStyles = createGlobalStyle`
     
 
 body{
-    font-family:"Sirin Stencil";
+    font-family:"ArialMedium";
     overflow:hidden;
     background-color: #202020;
 }
@@ -53,6 +53,12 @@ html {
 background-color:transparent !important;
 border:#fff !important;
 
+  }
+
+  #about ul li img {
+    width: 100vw;
+    height: 80vh;
+    object-fit: cover
   }
 
   .btn {

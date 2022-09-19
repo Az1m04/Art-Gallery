@@ -208,7 +208,7 @@ const About = ({ setData }) => {
   let navigate = useNavigate();
   return (
     <Section id="fixed-target" className="about">
-      <SubTitle
+      {/* <SubTitle
         data-scroll
         data-scroll-speed="-2"
         data-scroll-direction="horizontal"
@@ -221,7 +221,7 @@ const About = ({ setData }) => {
         data-scroll-direction="horizontal"
       >
         MASSIMO VIGNELLI
-      </Title>
+      </Title> */}
       {/* <Left
         data-scroll
         data-scroll-sticky

@@ -39,8 +39,7 @@ const LogoContainer = styled.div`
   }
   h3 {
     font-size: ${(props) => props.theme.fontxl};
-    font-family: "Kaushan Script";
-
+    
     @media (max-width: 48em) {
       font-size: ${(props) => props.theme.fontxl};
       img {

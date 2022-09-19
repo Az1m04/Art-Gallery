@@ -14,6 +14,7 @@ import React, { useEffect } from "react";
 import Logo from "./components/Logo";
 import FloatingMenu from "./components/FloatingMenu/FloatingMenu";
 import LandingPage from "./components/LandingPage/LandingPage";
+import AboutUS from "./components/AboutUS/AboutUs";
 
 function App() {
   const containerRef = useRef(null);
@@ -121,6 +122,8 @@ function App() {
         <Route path="/content" element={<Content   loaded={loaded} containerRef={containerRef}  title={getData?.title}
                   contentData={getContentData(getData?.title)}
                   img={getData?.img}  />} />
+
+        <Route path="/aboutus" element={<AboutUS   loaded={loaded} containerRef={containerRef}   />} />
 
 </Routes>
     </BrowserRouter>
