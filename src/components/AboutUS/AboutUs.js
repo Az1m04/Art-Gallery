@@ -66,7 +66,7 @@ const Title = styled.h1`
   color: ${(props) => props.theme.text};
   position: absolute;
   top:0;
-  left: 20%;
+  left: 13%;
   z-index: 5;
   
 
