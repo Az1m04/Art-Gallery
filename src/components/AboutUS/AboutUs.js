@@ -58,6 +58,7 @@ const SectionRight = styled.section`
 
   @media (max-width: 30em) {
     width: 100vw;
+    margin-top:-60rem;
   }
 `;
 const Title = styled.h1`
@@ -141,7 +142,7 @@ const Left = styled.div`
     font-size: ${(props) => props.theme.fontsm};
     width: 70%;
     margin-top:4rem;
-    margin-bottom:8rem;
+
   }
 `;
 
@@ -170,6 +171,7 @@ const Right = styled.div`
     align-items: center;
     margin-top:5vh;
   }
+  
 `;
 
 const SectionBanner = styled.section`
