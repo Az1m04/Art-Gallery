@@ -16,6 +16,7 @@ import FloatingMenu from "./components/FloatingMenu/FloatingMenu";
 import LandingPage from "./components/LandingPage/LandingPage";
 import AboutUS from "./components/AboutUS/AboutUs";
 import OurTeams from "./components/OurTeam/OurTeam";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   const containerRef = useRef(null);
@@ -140,9 +141,14 @@ function App() {
               path="/aboutus"
               element={<AboutUS loaded={loaded} containerRef={containerRef} />}
             />
-              <Route
+            <Route
               path="/teams"
               element={<OurTeams loaded={loaded} containerRef={containerRef} />}
+            />
+
+            <Route
+              path="/contact"
+              element={<Contact loaded={loaded} containerRef={containerRef} />}
             />
           </Routes>
         </BrowserRouter>

@@ -62,7 +62,7 @@ border:#fff !important;
   }
 
   .btn {
-    background-color:#BA2227 !important;
+    background-color:#FFF !important;
     padding:0.5rem;
     height: 35px;
     width: 35px;

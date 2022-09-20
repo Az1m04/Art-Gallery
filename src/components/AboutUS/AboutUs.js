@@ -54,8 +54,7 @@ const SectionRight = styled.section`
     width: 90vw;
     background-color: transparent;
     margin-top: -40rem;
-    margin-bottom:20rem;
-
+    margin-bottom: 20rem;
   }
 
   @media (max-width: 30em) {
@@ -75,7 +74,7 @@ const Title = styled.h1`
   @media (max-width: 64em) {
     font-size: ${(props) => `calc(${props.theme.fontxxxl} - 5vw)`};
     position: relative;
-    
+
     margin-left: -40rem;
   }
 
@@ -284,57 +283,71 @@ const AboutUS = ({ loaded, containerRef }) => {
                   //  data-scroll-target="#fixed-target"
                 >
                   <div>
-                  Like Elizabeth Broun very rightly says, “Art is not always
-                  about pretty things. It is about who we are, what happened to
-                  us and how our lives are affected.” History has played
-                  testimony to the fact that Art has always held the power to
-                  transform society just as Art is always influenced by the
-                  surroundings, events and mindset of the people at any given
-                  point of time. Even though its relevance can be undermined,
-                  the impact it has is incomparable, as it defies the
-                  divisiveness of society, caste, religion, gender and financial
-                  status. Visual language enjoys the freedom of expression and
-                  the process of creation, as much as it allows differentiation
-                  in perspective. In a world where people struggle to find
-                  common ground, we want to use Art as a means of bringing
-                  people together.
-                   <br/>
-                   <br/>
-                  <div style={{fontWeight:700}}>   Background- </div>
-                  <br/>
-                  When I think back at my most
-                  initial memories, I recall observing people who were
-                  passionate in expressing their ideas because as a child it
-                  caught my attention. Even though I didn’t always understand
-                  the conversation, I think subconsciously it impacted my
-                  thought process and I started believing that when one finds
-                  something one is truly passionate about, it has the potential
-                  to touch lives and transform the world. For me visual language
-                  became that tool. While on one side I was exploring the
-                  process of expression through visuals, on the other I was
-                  absorbing and observing what existed around me. Growing up in
-                  an environment where I was constantly surrounded by artists,
-                  connoisseurs and art enthusiasts, I got an insight into a
-                  world that otherwise only a few understood. The legacy that I
-                  inherited from my father who is a senior artist and was the ex
-                  vice chairman of Lalit Kala Academy; and mother who has been a
-                  curator, art adviser and ran a successful Art Gallery in
-                  Delhi, has been the biggest gift for me.
-                  <br/>
-                  <br/>
-                   Because of the insight into the industry from all quarters, I
-                  was able to
-                  identify the challenges people were facing in and outside the
-                  art fraternity. Most people in the country didn’t understand
-                  Art and its role in our lives or they felt that one needed a
-                  certain eclectic intellect with a combination of deep pockets
-                  to be able to afford it. On the other hand even the ones that
-                  had substantial interest, found it hard to trust the
-                  authenticity of the art works or advice of the ones initiating
-                  the sale. Hence, they became observers and appreciators rather
-                  than buyers and investors. This impacted the artists too.
-                  Hence, the realisation of the need for a venture like Art for
-                  Unity.
+                    Like Elizabeth Broun very rightly says, “Art is not always
+                    about pretty things. It is about who we are, what happened
+                    to us and how our lives are affected.” History has played
+                    testimony to the fact that Art has always held the power to
+                    transform society just as Art is always influenced by the
+                    surroundings, events and mindset of the people at any given
+                    point of time. Even though its relevance can be undermined,
+                    the impact it has is incomparable, as it defies the
+                    divisiveness of society, caste, religion, gender and
+                    financial status. Visual language enjoys the freedom of
+                    expression and the process of creation, as much as it allows
+                    differentiation in perspective. In a world where people
+                    struggle to find common ground, we want to use Art as a
+                    means of bringing people together.
+                    <br />
+                    <br />
+                    <div style={{ fontWeight: 700 }}> Background- </div>
+                    <br />
+                    When I think back at my most initial memories, I recall
+                    observing people who were passionate in expressing their
+                    ideas because as a child it caught my attention. Even though
+                    I didn’t always understand the conversation, I think
+                    subconsciously it impacted my thought process and I started
+                    believing that when one finds something one is truly
+                    passionate about, it has the potential to touch lives and
+                    transform the world. For me visual language became that
+                    tool. While on one side I was exploring the process of
+                    expression through visuals, on the other I was absorbing and
+                    observing what existed around me. Growing up in an
+                    environment where I was constantly surrounded by artists,
+                    connoisseurs and art enthusiasts, I got an insight into a
+                    world that otherwise only a few understood. The legacy that
+                    I inherited from my father who is a senior artist and was
+                    the ex vice chairman of Lalit Kala Academy; and mother who
+                    has been a curator, art adviser and ran a successful Art
+                    Gallery in Delhi, has been the biggest gift for me.
+                    <br />
+                    <br />
+                    Because of the insight into the industry from all quarters,
+                    I was able to identify the challenges people were facing in
+                    and outside the art fraternity. Most people in the country
+                    didn’t understand Art and its role in our lives or they felt
+                    that one needed a certain eclectic intellect with a
+                    combination of deep pockets to be able to afford it. On the
+                    other hand even the ones that had substantial interest,
+                    found it hard to trust the authenticity of the art works or
+                    advice of the ones initiating the sale. Hence, they became
+                    observers and appreciators rather than buyers and investors.
+                    This impacted the artists too. Hence, the realisation of the
+                    need for a venture like Art for Unity.
+                    
+                    <br />
+                    <br />
+                    <div style={{ fontWeight: 700 }}>  Our vision- India has </div>
+                     <br />
+                    <br />
+                    always had a rich cultural heritage and an abundance of art.
+                    Through Art for Unity we want to create a platform that is
+                    incorporative and where there is something for everyone. We
+                    want to use Art as a tool for reflection, storytelling,
+                    historical analysis, problem solving, bringing people
+                    together, social/environmental education, multiplication of
+                    wealth, means of expression and creation. It is amazing how
+                    much potential Art as a medium has and how little we have
+                    actually been able to utilize it.
                   </div>
                 </Right>
               </SectionRight>
