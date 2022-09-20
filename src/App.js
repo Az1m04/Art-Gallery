@@ -110,7 +110,10 @@ function App() {
       <GlobalStyles />
       <ThemeProvider theme={dark}>
         <div style={{ position: "absolute", zIndex: "10", margin: "3rem" }}>
+          <a href="/">
           <Logo />
+
+          </a>
         </div>
         <BrowserRouter>
           <Routes>

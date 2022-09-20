@@ -138,10 +138,12 @@ const Footer = () => {
   return (
     <Section id="info">
       <LogoContainer>
+      <a href="/">
         <img data-scroll data-scroll-speed="2" src={Logo} alt="Company Name" />
         <h3 data-scroll data-scroll-speed="-1">
           ART FOR UNITY
         </h3>
+        </a>
       </LogoContainer>
       <FooterComponent
         initial={{ y: "-400px" }}
